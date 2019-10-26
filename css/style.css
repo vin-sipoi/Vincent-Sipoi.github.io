@@ -1,5 +1,88 @@
-/* css content */
-p{
-  font-weight: bold;
-  font-size: 60px;
+/* Vendor Direct stylesheet */
+/* Import for the root css file */
+@import "root.css";
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+     font-family: "Roboto Cn", sans-serif;
+     line-height: 1.15;
+     -webkit-text-size-adjust: 100%;
+     -ms-text-size-adjust: 100%;
+     -ms-overflow-style: scrollbar;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+header{
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(to bottom,rgba(0,0,0,.8),rgba(0,0,0,.5)), url("../images/venda-head.jpg") center no-repeat;
+    background-size: cover;
+    
+}
+.navgation-bar{
+    padding-top: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-size:1rem;
+    text-align: center;  
+    margin-left: auto;
+		margin-right: auto;
+}
+.navgation-bar ul{
+    display: inline-block;
+}
+.navgation-bar ul li{
+    list-style: none;
+    display: inline-block;
+}
+.navgation-bar ul li a{
+    padding:1rem 0;
+    margin: 0 1.5rem;
+    position: relative;
+    letter-spacing: 2px;
+    display: inline-block;
+    text-decoration: none;
+    color: #f4f7f7;
+}
+.navgation-bar ul li a::before,
+.navgation-bar ul li a::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: crimson;
+    transform: scalex(0);
+    transition: all .5s;
+}
+.navgation-bar ul li a::before{
+    top: 0;
+    transform-origin:left; 
+}
+.navgation-bar ul li a::after{
+    bottom: 0;
+    transform-origin:left; 
+}
+.navgation-bar ul li a:hover::before,
+.navgation-bar ul li a:hover::after{
+    transform: scaleX(1);
+}
+.logo{
+    display: inline;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    text-align: center;
+    display: inline-block;  
+    position: relative;
+    float: left;
+    
+}
+.logo img{
+    width: 170px; 
+    
 }
