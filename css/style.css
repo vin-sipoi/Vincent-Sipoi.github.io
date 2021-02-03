@@ -1,88 +1,99 @@
-/* Vendor Direct stylesheet */
-/* Import for the root css file */
-@import "root.css";
-*,
-*::before,
-*::after {
-    margin: 0;
-    padding:0; 
-    box-sizing: border-box;
-}
-html{
-     font-family: "Roboto Cn", sans-serif;
-     line-height: 1.15;
-     -webkit-text-size-adjust: 100%;
-     -ms-text-size-adjust: 100%;
-     -ms-overflow-style: scrollbar;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+html, body{
+    width: 100%;
+    height : 100%;
 }
 
-header{
-    width: 100%;
-    height: 500px;
-    background: linear-gradient(to bottom,rgba(0,0,0,.8),rgba(0,0,0,.5)), url("../images/venda-head.jpg") center no-repeat;
+body{
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(30,20,100,0.50) 100%), url(/images/bac-2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
-    
 }
-.navgation-bar{
-    padding-top: 2rem;
-    justify-content: space-between;
-    align-items: center;
-    text-transform: uppercase;
-    font-size:1rem;
-    text-align: center;  
+#center{
+    display: block;
     margin-left: auto;
-		margin-right: auto;
+    margin-right: auto;
 }
-.navgation-bar ul{
+
+.proPic img{
+    border-radius: 50%;
+    width: 150px;
+    height:150px;
     display: inline-block;
+    margin: auto;
 }
-.navgation-bar ul li{
-    list-style: none;
-    display: inline-block;
+.joke{
+    clear: both;
 }
-.navgation-bar ul li a{
-    padding:1rem 0;
-    margin: 0 1.5rem;
-    position: relative;
-    letter-spacing: 2px;
-    display: inline-block;
-    text-decoration: none;
-    color: #f4f7f7;
-}
-.navgation-bar ul li a::before,
-.navgation-bar ul li a::after{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    background-color: crimson;
-    transform: scalex(0);
-    transition: all .5s;
-}
-.navgation-bar ul li a::before{
-    top: 0;
-    transform-origin:left; 
-}
-.navgation-bar ul li a::after{
-    bottom: 0;
-    transform-origin:left; 
-}
-.navgation-bar ul li a:hover::before,
-.navgation-bar ul li a:hover::after{
-    transform: scaleX(1);
-}
-.logo{
-    display: inline;
-    padding-top: 2rem;
-    padding-left: 2rem;
-    text-align: center;
-    display: inline-block;  
-    position: relative;
+.joke img{
     float: left;
     
 }
-.logo img{
-    width: 170px; 
-    
+.description{
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    color: rgb(230, 230, 230);
+    font-family: monospace;
 }
+.footer-basic {
+    padding:40px 0;
+    background-color:#fafaf9;
+    color:#4b4c4d;
+  }
+  
+  .footer-basic ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+  }
+  
+  .footer-basic li {
+    padding:0 10px;
+  }
+  
+  .footer-basic ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-basic ul a:hover {
+    opacity:1;
+  }
+  
+  .footer-basic .social {
+    text-align:center;
+    padding-bottom:25px;
+  }
+  
+  .footer-basic .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer-basic .social > a:hover {
+    opacity:0.9;
+  }
+  
+  .footer-basic .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color:#aaa;
+    margin-bottom:0;
+  }
+  
