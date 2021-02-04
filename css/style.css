@@ -23,13 +23,6 @@ body{
     display: inline-block;
     margin: auto;
 }
-.joke{
-    clear: both;
-}
-.joke img{
-    float: left;
-    
-}
 .description{
     font-weight: bold;
     font-size: 2rem;
@@ -39,8 +32,9 @@ body{
 }
 .footer-basic {
     padding:40px 0;
-    background-color:#fafaf9;
-    color:#4b4c4d;
+    background-color:#f9f9fa;
+    color:#060808;
+    opacity: 0.3;
   }
   
   .footer-basic ul {
@@ -79,7 +73,7 @@ body{
     display:inline-block;
     text-align:center;
     border-radius:50%;
-    border:1px solid #ccc;
+    border:1px solid rgb(0, 0, 0);
     margin:0 8px;
     color:inherit;
     opacity:0.75;
@@ -92,8 +86,8 @@ body{
   .footer-basic .copyright {
     margin-top:15px;
     text-align:center;
-    font-size:13px;
-    color:#aaa;
+    font-size:18px;
+    color:rgb(17, 15, 15);
     margin-bottom:0;
   }
   
